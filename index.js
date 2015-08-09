@@ -7,7 +7,6 @@ module.exports = function (str) {
   var path = require('path');
   global.appRoot = path.resolve(__dirname);
   if(args.indexOf('-p') > -1){
-     console.log('project provided');
      options.projectDir = args[args.indexOf('-p')+1];
   }
   //var fs = require('fs');
