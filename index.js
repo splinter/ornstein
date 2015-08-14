@@ -20,6 +20,11 @@ module.exports = function (str) {
      //Run the project
      runner.run(options);
   }
+
+  process.on('exit',function(){
+    console.log('I am finished running all the tests , have a good day :)');
+    console.log(runner.getResults());
+  });
   // console.log(str || 'Rainbow'); 
   // console.log(process.argv);
   // var result = require('./dhc-requests/dhc-request-multi.json');
