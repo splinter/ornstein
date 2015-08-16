@@ -1,0 +1,18 @@
+<table>
+	<tr>
+		<th>Request name</th>
+		<th>Passed/Failed</th>
+	</tr>
+	<tbody>
+		{{#each .}}
+		<tr>
+		<td>{{@key}}</td>
+		{{#if this.passed}}
+			<td>Passed </td>
+		{{else}}
+			<td>Failed </td>
+		{{/if}}
+		</tr>
+		{{/each}}
+	</tbody>
+</table>

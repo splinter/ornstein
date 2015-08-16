@@ -1,0 +1,27 @@
+{{#each .}}
+	<div>
+		<div> 
+			<h2>Request Name: {{@key}}</h2>
+		</div>
+		<div>
+			<h2>Response</h2>
+			<div>
+				<code>
+					{{response}}
+				</code>
+			</div>
+		</div>
+		<div>
+			<table>
+				<tr>
+					<th>Test Name </th>
+					<th>Passed/Failed </th>
+					<th>Details </th>
+				</tr>
+				{{#each this.tests}}
+					{{> test-details .}}
+				{{/each}}
+			</table>
+		</div>
+	</div>
+{{/each}}

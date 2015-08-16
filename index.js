@@ -25,7 +25,7 @@ module.exports = function (str) {
     console.log('I am finished running all the tests , have a good day :)');
     var reporter = require('report-runner');
     //console.log(runner.getResults());
-    console.log(reporter.run());
+    reporter.run(runner.getResultSet());
   });
   // console.log(str || 'Rainbow'); 
   // console.log(process.argv);
