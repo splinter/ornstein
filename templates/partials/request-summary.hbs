@@ -1,17 +1,19 @@
-<table>
+<table border=1>
 	<tr>
 		<th>Request name</th>
 		<th>Passed/Failed</th>
+		<th>Status Code</th>
 	</tr>
 	<tbody>
 		{{#each .}}
 		<tr>
-		<td>{{@key}}</td>
+		<td><a href="#{{@key}}-request-details">{{@key}}</a></td>
 		{{#if this.passed}}
-			<td>Passed </td>
+			<td class="test-passed">Passed </td>
 		{{else}}
-			<td>Failed </td>
+			<td class="test-failed">Failed </td>
 		{{/if}}
+		<td></td>
 		</tr>
 		{{/each}}
 	</tbody>

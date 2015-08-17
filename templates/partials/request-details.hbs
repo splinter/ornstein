@@ -1,10 +1,11 @@
 {{#each .}}
-	<div>
+	<hr />
+	<div id="{{@key}}-request-details">
 		<div> 
-			<h2>Request Name: {{@key}}</h2>
+			<h3>Name: {{@key}}</h3>
 		</div>
 		<div>
-			<h2>Response</h2>
+			<h4>Response</h4>
 			<div>
 				<code>
 					{{response}}
@@ -12,7 +13,7 @@
 			</div>
 		</div>
 		<div>
-			<table>
+			<table border="1">
 				<tr>
 					<th>Test Name </th>
 					<th>Passed/Failed </th>

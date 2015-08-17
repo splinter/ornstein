@@ -1,5 +1,9 @@
 <tr>
-	<td>Test names goes here</td>
-	<td>Passed/Failed</td>
-	<td>Details go here</td>
+	<td>{{@key}}</td>
+		{{#if passed}}
+		<td class="test-passed">Passed</td>
+		{{else}}
+		<td class="test-failed">Failed</td>
+		{{/if}}
+	<td>{{result}}</td>
 </tr>
